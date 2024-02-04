@@ -236,7 +236,7 @@ int main (void)
 		.entity = ecs_entity (world,
 		{
 			.name = "system c",
-			.add = {ecs_dependson (phase1), phase1, ecs_id(PhasePriority)}
+			.add = {ecs_dependson (phase1), phase1}
 		}),
 		.callback = print_system
 	});
@@ -264,7 +264,7 @@ int main (void)
 		.entity = ecs_entity (world,
 		{
 			.name = "system a",
-			.add = {ecs_dependson (phase0), phase0, ecs_id(PhasePriority)}
+			.add = {ecs_dependson (phase0), phase0}
 		}),
 		.callback = print_system
 	});

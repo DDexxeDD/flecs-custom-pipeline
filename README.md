@@ -1,6 +1,6 @@
 # Flecs Custom Pipline
 
-A simple example of a custom pipeline in flecs.  I wanted to play with custom pipelines and the examples included with flecs didn't really cover enough for me.  Hopefully this little demo can help you too :)
+A simple example of a custom pipeline in [flecs](https://github.com/SanderMertens/flecs).  I wanted to play with custom pipelines and the examples included with flecs didn't really cover enough for me.  Hopefully this little demo can help you too :)
 
 ## Building
 

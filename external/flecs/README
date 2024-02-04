@@ -1,1 +1,5 @@
 https://github.com/SanderMertens/flecs
+
+almost all c++ functionality has been removed from this copy of flecs,
+because the tags it generated were annoying to navigate, and messed with
+my highlighting.

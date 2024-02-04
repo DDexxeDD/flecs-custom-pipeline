@@ -240,8 +240,7 @@ int main (void)
 		}),
 		.callback = print_system
 	});
-	PhasePriority* priority = ecs_get_mut (world, system_c, PhasePriority);
-	priority->priority = 0;
+	ecs_set (world, system_c, PhasePriority, {0});
 
 	/*
 	 * 'system a' and 'system b' will both be run in phase0
@@ -258,8 +257,7 @@ int main (void)
 		}),
 		.callback = print_system
 	});
-	priority = ecs_get_mut (world, system_b, PhasePriority);
-	priority->priority = 1;
+	ecs_set (world, system_b, PhasePriority, {1});
 
 	ecs_entity_t system_a = ecs_system (world,
 	{
@@ -270,8 +268,7 @@ int main (void)
 		}),
 		.callback = print_system
 	});
-	priority = ecs_get_mut (world, system_a, PhasePriority);
-	priority->priority = 0;
+	ecs_set (world, system_a, PhasePriority, {0});
 
 	ecs_progress (world, 0);
 
